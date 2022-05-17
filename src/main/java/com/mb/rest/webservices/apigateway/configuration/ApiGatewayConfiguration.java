@@ -18,6 +18,8 @@ public class ApiGatewayConfiguration {
   @Bean
   public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
 
+    // add custom filters on specific paths. In API gateway
+
     // what we are doing in here is creating a simple route function.
     // If a request comes to /get, then we would want to redirect it to this specific
     // URI "https://http.org:80".
